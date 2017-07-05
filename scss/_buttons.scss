@@ -139,3 +139,21 @@ input[type="button"] {
     width: 100%;
   }
 }
+
+.btn-white {
+  @include button-variant($black, $white, $white);
+}
+
+.btn-black {
+  @include button-variant($white, $black, $black);
+}
+
+.btn-outline-white {
+  @include button-outline-variant($btn-white-bg, $btn-white-bg);
+}
+
+.btn-outline-black {
+  @include button-outline-variant($btn-black-bg, $btn-black-bg);
+}
+
+
